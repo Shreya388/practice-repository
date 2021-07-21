@@ -1,11 +1,11 @@
 import React from "react";
-import Button from 'react-bootstrap/Button';
+import {} from 'react-bootstrap';
 
-function Header(props) {
-    return <div>
-        <h1>{props.year}, {props.name}</h1>
-        <Button variant="primary">apple</Button>
-    </div>;
+class Header extends React.Component {
+  render() {
+   console.log(this.props.user);
+    return <h2>Hellooo</h2>;
+  }
 }
 
 export default Header;
