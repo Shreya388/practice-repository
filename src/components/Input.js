@@ -1,34 +1,47 @@
 import React, { useState } from "react";
-import {Navbar, Nav, Container, Form, Button} from 'react-bootstrap';
+import { Button, Navbar, Form, Container } from "react-bootstrap";
+
 
 const Input = () => {
   const [name, setName] = useState("");
-  const [fullName, setFullName] = useState();
+  const [url, setUrl] = useState("");
+  const [fullName, setFullName] = useState([]);
+  const [fullUrl, setFullUrl] = useState([]);
+ 
 
-    const inputEvent = (event) => {
-      console.log(event.target.value)
-      setName(event.target.value)
-    };
+  const inputName = (event) => {
+    console.log(event.target.value)
+    setName(event.target.value)
+  };
 
-    const onSubmit = () => {
-      setFullName(name);
-      
-    }
+  const inputUrl = (event) => {
+    console.log(event.target.value)
+    setUrl(event.target.value)
+  };
+
+
+  const onSubmit = () => {
+    setFullName(name);
+    setFullUrl(url);
+  
+  }
     
     return (
       
+      <div>
       <Navbar bg="dark" variant="dark">
         <Container>
-          
-        <Navbar.Brand href="#home"> {fullName}</Navbar.Brand>
-          <Nav className="me-auto">
-          <Form.Control placeholder="type something :)" value={name} onChange={inputEvent} />
-          <Button bg="primary" onClick={onSubmit}>Submit</Button>
-          </Nav>
+          <Form.Control placeholder="Name.." value={name} onChange={inputName} />
+          <Form.Control placeholder="Url.." value={url} onChange={inputUrl} />
+          <Button onClick={onSubmit}>+</Button>
+            
         </Container>
       </Navbar>
-     
-      
+
+      <Container>
+        <a href={fullUrl}>{fullName}</a>
+      </Container>
+      </div>
     );
   }
 
