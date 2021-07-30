@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Button, Navbar, Form, Container } from "react-bootstrap";
 
 
+
 const Input = () => {
   const [name, setName] = useState("");
   const [url, setUrl] = useState("");
@@ -39,7 +40,8 @@ const Input = () => {
       </Navbar>
 
       <Container>
-        <a href={fullUrl}>{fullName}</a>
+        
+        <a href= {'https://' + fullUrl}>{fullName}</a>
       </Container>
       </div>
     );
