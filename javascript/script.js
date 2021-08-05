@@ -13,7 +13,26 @@ var student = [
 
 console.log(student.Name)*/
 
-const id = 3;
-const id2 = 5;
-console.log(id > id2);
 
+/*
+var input = prompt("")
+
+const id = input;
+var i = 5;
+
+if(id > Number.isInteger()){
+  alert("its not empty its full")
+}else{
+  console.log("its empptty ;)");
+}
+*/
+let text = "";
+let i = 0;
+
+
+while (i < 100) {
+  text += "<br>the number is " + i;
+  i++;
+}
+
+document.getElementById("demo").innerHTML = text;
