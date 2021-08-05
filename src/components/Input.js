@@ -1,48 +1,39 @@
 import React, { useState } from "react";
-import { Button, Navbar, Form, Container } from "react-bootstrap";
+import {Form, Navbar, Button } from "react-bootstrap";
 
 
+/*
+const Input = () => {
+  const [name, setName] = useState([]);
+  const [url, setUrl] = useState([]);
+
+
+  const a = {
+    name : "ram",
+    age : 25,
+  }
+*/
 
 const Input = () => {
-  const [name, setName] = useState("");
-  const [url, setUrl] = useState("");
-  const [fullName, setFullName] = useState([]);
-  const [fullUrl, setFullUrl] = useState([]);
- 
-
-  const inputName = (event) => {
-    console.log(event.target.value)
-    setName(event.target.value)
-  };
-
-  const inputUrl = (event) => {
-    console.log(event.target.value)
-    setUrl(event.target.value)
-  };
-
-
-  const onSubmit = () => {
-    setFullName(name);
-    setFullUrl(url);
-  
-  }
     
+    const[name, setName] = useState([{firstName: "", url:""}])
+    
+  
     return (
       
       <div>
       <Navbar bg="dark" variant="dark">
-        <Container>
-          <Form.Control placeholder="Name.." value={name} onChange={inputName} />
-          <Form.Control placeholder="Url.." value={url} onChange={inputUrl} />
-          <Button onClick={onSubmit}>+</Button>
-            
-        </Container>
+      <Form>
+        <Form.Control type="text" value={name.firstName} onChange={e => setName({ ...name, firstName: e.target.value})} />
+        <Form.Control type="text" value={name.url} onChange={e => setName({ ...name, url: e.target.value})} />
+        <Button>Go</Button>
+
+        
+    
+      </Form>
       </Navbar>
 
-      <Container>
-        
-        <a href= {'https://' + fullUrl}>{fullName}</a>
-      </Container>
+      <a href={"https://" + name.url}>{name.firstName}</a>
       </div>
     );
   }
