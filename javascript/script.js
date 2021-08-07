@@ -26,13 +26,13 @@ if(id > Number.isInteger()){
   console.log("its empptty ;)");
 }
 */
-let text = "";
-let i = 0;
+let fruits = ["apple", "grape", "pineapple"];
 
+fruits.push("orange", "mango", "banana");
+fruits.shift();
 
-while (i < 100) {
-  text += "<br>the number is " + i;
-  i++;
+let demoId = document.getElementById("demo");
+for(let i = 0; i < fruits.length; i++) {
+  console.log(fruits[i]);
 }
 
-document.getElementById("demo").innerHTML = text;
