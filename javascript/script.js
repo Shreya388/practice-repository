@@ -27,12 +27,14 @@ if(id > Number.isInteger()){
 }
 */
 let fruits = ["apple", "grape", "pineapple"];
+fruits.push("stawberry", "mango")
 
-fruits.push("orange", "mango", "banana");
-fruits.shift();
+for(element of fruits) {
+  console.log(element);
 
-let demoId = document.getElementById("demo");
-for(let i = 0; i < fruits.length; i++) {
-  console.log(fruits[i]);
 }
 
+for(element in fruits) {
+  console.log(element);
+
+}
