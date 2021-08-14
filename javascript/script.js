@@ -26,15 +26,20 @@ if(id > Number.isInteger()){
   console.log("its empptty ;)");
 }
 */
-let fruits = ["apple", "grape", "pineapple"];
-fruits.push("stawberry", "mango")
 
-for(element of fruits) {
-  console.log(element);
+//for loop
+/*
+let fruits = ["apple", "grape", "pineapple", "banana", "peach"];
 
-}
+for(let i = 0; fruits.length > i; i++){
+  console.log(fruits[i]);
+}*/
 
-for(element in fruits) {
-  console.log(element);
 
+let fruits = ["apple", "mango", "banana", "pineapple", "lemon", "tomato", "potato", "chili", "Kiwi", ]
+
+fruits.push("carrot");
+
+for(let i = 0; fruits.length > i; i++){
+  console.log(i + ': ' + fruits[i]);
 }
