@@ -35,7 +35,7 @@ for(let i = 0; fruits.length > i; i++){
   console.log(fruits[i]);
 }*/
 
-
+/*
 let fruits = ["apple", "mango", "banana", "pineapple", "lemon", "tomato", "potato", "chili", "Kiwi", ]
 
 fruits.push("carrot");
@@ -43,3 +43,11 @@ fruits.push("carrot");
 for(let i = 0; fruits.length > i; i++){
   console.log(i + ': ' + fruits[i]);
 }
+*/
+
+//finding the square root of index of an array, by using map
+let arr = [4, 9, 16, 25, 36, 49, 64, 81];
+let arrSqr = arr.map((curElem) => {
+  return Math.sqrt(curElem);
+})
+console.log(arrSqr);
