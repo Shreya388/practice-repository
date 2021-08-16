@@ -67,6 +67,40 @@ console.log(anySentence);
 */
 
  //finding String in a String
+ 
+ //const myBioData = "I'm Bucchi";
+ //console.log(myBioData.lastIndexOf("B", 6));
 
- const myBioData = "I'm Bucchi";
- console.log(myBioData.indexOf("Bucchi"));
+/* const myBioData = "I have a pet named suzi";
+
+let sData = myBioData.search("pet");
+
+console.log(sData);
+*/
+
+/*
+str = "apple, mango, banana"; 
+
+let res = str.slice(0, -3);
+console.log(res);
+*/
+
+//display only 100 characters of a string
+
+//let myTweet = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat";
+
+//let setTweetLength = myTweet.slice(0, 100);
+//console.log(setTweetLength);
+//console.log(setTweetLength.length); 
+
+/*
+let myBioData = `I am vinod bahadur thapa vinod`;
+
+let replaceData = myBioData.replace('vinod','Vinod');
+console.log(replaceData);
+*/
+
+//finding the position of characters
+
+let str = "HELLO WORLD";
+console.log(str.charAt(0));
