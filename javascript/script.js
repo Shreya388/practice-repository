@@ -46,8 +46,27 @@ for(let i = 0; fruits.length > i; i++){
 */
 
 //finding the square root of index of an array, by using map
+/*
 let arr = [4, 9, 16, 25, 36, 49, 64, 81];
 let arrSqr = arr.map((curElem) => {
   return Math.sqrt(curElem);
 })
 console.log(arrSqr);
+*/
+
+//let myName = "bucchi jha";
+//let myRealName = new String('Shraaya');
+
+//console.log(myName.length);
+
+/*let anySentence = "we are the so-called \"Vikings\" from the north.";
+console.log(anySentence);
+
+let newSentence = 'we are the so-called "Vikings" from the north.';
+console.log(anySentence);
+*/
+
+ //finding String in a String
+
+ const myBioData = "I'm Bucchi";
+ console.log(myBioData.indexOf("Bucchi"));
