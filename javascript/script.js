@@ -101,6 +101,41 @@ console.log(replaceData);
 */
 
 //finding the position of characters
-
+/*
 let str = "HELLO WORLD";
-console.log(str.charAt(0));
+console.log(str.charAt(6));
+*/
+
+/*
+let names = "my name is zelda";
+
+let replaceData = names.replace('zelda','Shreya');
+console.log(replaceData);
+*/
+
+/*
+let str = "apple, mango, banana";
+
+let res = str.slice(0,-5);
+console.log(str);
+console.log(res);
+*/
+
+let person = [
+  {
+  name : "Kesha",
+  age : 30,
+  height : "5'10",
+},
+  {
+    name: "angelina",
+    age: 50, 
+  },
+  {
+    name: "Mr.Toot",
+    age:30,
+    favColor: "red",
+  }
+];
+
+console.log(person[1]);
