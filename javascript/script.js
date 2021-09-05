@@ -143,7 +143,7 @@ let person = [
 console.log(person[2]);
 */
 
-//made something which shows current time and date:
+//made something which shows the current time and date:
 /*
 let time = new Date();
 let currDate = time.toDateString();
@@ -151,3 +151,8 @@ let currTime = time.toLocaleTimeString();
 console.log(currDate + ", " + currTime);
 */
 
+
+let num = 1.9;
+console.log(Math.round(num));
+console.log(Math.floor(num));
+console.log(Math.ceil(num));
