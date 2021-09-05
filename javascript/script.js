@@ -121,6 +121,8 @@ console.log(str);
 console.log(res);
 */
 
+//object
+/*
 let person = [
   {
   name : "Kesha",
@@ -138,4 +140,14 @@ let person = [
   }
 ];
 
-console.log(person[1]);
+console.log(person[2]);
+*/
+
+//made something which shows current time and date:
+/*
+let time = new Date();
+let currDate = time.toDateString();
+let currTime = time.toLocaleTimeString();
+console.log(currDate + ", " + currTime);
+*/
+
