@@ -151,8 +151,11 @@ let currTime = time.toLocaleTimeString();
 console.log(currDate + ", " + currTime);
 */
 
-
+/*using Math.floor()
 let num = 1.9;
 console.log(Math.round(num));
 console.log(Math.floor(num));
 console.log(Math.ceil(num));
+*/
+
+
