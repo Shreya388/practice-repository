@@ -3,6 +3,7 @@
 # dependencies
 addSubNum/node_modules
 /node_modules
+/hooks/node_modules
 /.pnp
 .pnp.js
 
